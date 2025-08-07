@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Desenvolvedor Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Botão menu -->
+    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+
+    <div class="container2">
+        <div class="sidebar">
+            <div class="logo">G</div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#sobre">About</a>
+                <a href="#habilidades">Skills</a>
+                <a href="#trabalho">Work</a>
+                <a href="#serviços">Services</a>
+                <a href="#contato">Contact</a>
+            </nav>
+        </div>
+
+        <div class="container">
+            <!-- Header Section -->
+            <header class="header" id="home">
+                <div class="profile-info">
+                    <h1>Gabriel Lins</h1>
+                    <p>Fortaleza - CE</p>
+                    <p class="title">Desenvolvedor Frontend | Técnico em ADS</p>
+                    <p class="age">17 anos • SENAI - Análise e Desenvolvimento de Sistemas</p>
+                    <p class="description">Iniciante apaixonado por desenvolvimento web, com foco em frontend e interesse crescente em UX/UI Design.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Elbizito" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/gabriel-lins-358239351" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:gabriellinssoares@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="profile-img">
+                    <img src="perfillins.png" alt="Gabriel Lins">
+                </div>
+            </header>
+
+            <!-- About Section -->
+            <section class="about" id="sobre">
+                <h2><i class="fas fa-user"></i> Sobre Mim</h2>
+                <p>
+                    Formado em Análise e Desenvolvimento de Sistemas no SENAI, com 17 anos e uma grande paixão por tecnologia. 
+                    Atualmente me especializando em desenvolvimento frontend, com interesse crescente em UX/UI Design. 
+                    Sempre em busca de novos conhecimentos e desafios no mundo do desenvolvimento web.
+                </p>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills" id="habilidades">
+                <h2><i class="fas fa-code"></i> Tecnologias</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <h3>Git</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js-square"></i>
+                        <h3>JavaScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-node-js"></i>
+                        <h3>Node.js</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-react"></i>
+                        <h3>React</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h3>MySQL</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-figma"></i>
+                        <h3>Figma</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact" id="contato">
+                <h2><i class="fas fa-envelope"></i> Contato</h2>
+                <p>Interessado em projetos colaborativos ou oportunidades de aprendizado? Vamos conversar!</p>
+                <div class="contact-buttons">
+                    <a href="mailto:gabriellinssoares@gmail.com" class="btn primary">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a href="https://linkedin.com/in/gabriel-lins-358239351" class="btn secondary" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Script para abrir/fechar o menu no mobile -->
+    <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const sidebar = document.querySelector(".sidebar");
+
+    toggle.addEventListener("click", () => {
+      sidebar.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
