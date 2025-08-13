@@ -121,12 +121,11 @@ Contribuições são bem-vindas! Sinta-se à vontade para:
 4. Push para a branch (`git push origin feature/MinhaFeature`)
 5. Abrir um Pull Request
 
-## 📄 Licença
-
 
 ## 📞 Contato
 
 Gabriel Lins - [@Elbizito](https://github.com/Elbizito)
+📞 +55 85 99235-2352
 
 - 📧 Email: gabriellinssoares@gmail.com
 - 💼 LinkedIn: [gabriel-lins-358239351](https://linkedin.com/in/gabriel-lins-358239351)
