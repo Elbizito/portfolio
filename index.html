@@ -3,132 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Perfil - Desenvolvedor Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Gabriel Lins - Desenvolvedor Frontend</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Botão menu -->
-    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
 
-    <div class="container2">
-        <div class="sidebar">
-            <div class="logo">G</div>
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#sobre">About</a>
-                <a href="#habilidades">Skills</a>
-                <a href="#trabalho">Work</a>
-                <a href="#serviços">Services</a>
-                <a href="#contato">Contact</a>
-            </nav>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loading-text">Elbizito</div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <div class="logo">GL</div>
+            <ul class="sidebar-menu">
+                <li><a href="#home" data-text="Home"><i class="fa-sharp fa-solid fa-house"></i></a></li>
+                <li><a href="#about" data-text="About"><i class="fa-sharp fa-solid fa-circle-user"></i></a></li>
+                <li><a href="#skills" data-text="Skills"><i class="fa-sharp fa-solid fa-address-book"></i></a></li>
+                <li><a href="#contact" data-text="Contact"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
+            </ul>
         </div>
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="mailto:gabrielinssoares@gmail.com" data-text="Email">✉</a>
+                <a href="https://linkedin.com/in/gabriel-lins" target="_blank" data-text="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Elbizito" target="_blank" data-text="GitHub"><i class="fa-brands fa-github-alt"></i></a>
+            </div>
+        </div>
+    </nav>
 
-        <div class="container">
-            <!-- Header Section -->
-            <header class="header" id="home">
-                <div class="profile-info">
-                    <h1>Gabriel Lins</h1>
-                    <p>Fortaleza - CE</p>
-                    <p class="title">Desenvolvedor Frontend | Técnico em ADS</p>
-                    <p class="age">17 anos • SENAI - Análise e Desenvolvimento de Sistemas</p>
-                    <p class="description">Iniciante apaixonado por desenvolvimento web, com foco em frontend e interesse crescente em UX/UI Design.</p>
-                    <div class="social-links">
-                        <a href="https://github.com/Elbizito" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/gabriel-lins-358239351" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:gabriellinssoares@gmail.com"><i class="fas fa-envelope"></i></a>
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobileToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+    <main class="main-content">
+        <!-- inicio -->
+        <section class="hero" id="home">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-subtitle">Olá. Eu sou</div>
+                    <h1 class="hero-title">
+                        <span class="highlight">Gabriel</span><br>
+                        Lins
+                    </h1>
+                    <p class="hero-description">
+                        Desenvolvedor Web de 17 anos, natural do Ceará. Uso minha paixão e habilidades 
+                        para criar produtos digitais com criatividade. Sempre buscando aprender 
+                        novas ferramentas e tecnologias para evoluir constantemente.
+                    </p>
+                    <a href="projetos.html" class="cta-button">
+                        Ver meu trabalho
+                        <span>→</span>
+                    </a>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="image-placeholder">
+                        
+                            <img src="lins.jpg" alt="fotodeperfil">
+                        </div>
                     </div>
                 </div>
-                <div class="profile-img">
-                    <img src="perfillins.png" alt="Gabriel Lins">
+            </div>
+        </section>
+
+        <!-- sobre mim -->
+        <section class="about" id="about">
+            <div class="about-content">
+                <div class="section-label">Sobre Mim</div>
+                <div class="about-text">
+                    Sou <strong>Gabriel Lins</strong>, tenho 17 anos e sou natural do Ceará. 
+                    Atualmente me formando como técnico em <strong>Análise e Desenvolvimento de Sistemas</strong> 
+                    pelo SENAI. Sou apaixonado por tecnologia, desenvolvimento web e <strong>UX/UI Design</strong>. 
+                    Trabalho como freelancer e estou sempre em busca de novos desafios que me permitam 
+                    crescer e contribuir para o mundo digital.
                 </div>
-            </header>
+            </div>
+        </section>
 
-            <!-- About Section -->
-            <section class="about" id="sobre">
-                <h2><i class="fas fa-user"></i> Sobre Mim</h2>
-                <p>
-                    Formado em Análise e Desenvolvimento de Sistemas no SENAI, com 17 anos e uma grande paixão por tecnologia. 
-                    Atualmente me especializando em desenvolvimento frontend, com interesse crescente em UX/UI Design. 
-                    Sempre em busca de novos conhecimentos e desafios no mundo do desenvolvimento web.
-                </p>
-            </section>
-
-            <!-- Skills Section -->
-            <section class="skills" id="habilidades">
-                <h2><i class="fas fa-code"></i> Tecnologias</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fa-brands fa-git-alt"></i>
-                        <h3>Git</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%;"></div>
-                        </div>
+        <!-- skills -->
+        <section class="skills" id="skills">
+            <div class="skills-content">
+                <div class="section-header">
+                    <div class="section-label">Tecnologias & Skills</div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev-btn" id="prevBtn">‹</button>
+                        <button class="carousel-btn next-btn" id="nextBtn">›</button>
                     </div>
-                    <div class="skill-card">
-                        <i class="fab fa-html5"></i>
-                        <h3>HTML5</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%;"></div>
+                </div>
+                
+                <div class="skills-carousel-container">
+                    <div class="skills-carousel" id="skillsCarousel">
+                        <div class="skill-card" data-skill="html">
+                            <div class="skill-card-inner">
+                                <div class="skill-front">
+                                    <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                                    <div class="skill-name">HTML5</div>
+                                </div>
+                                <div class="skill-back">
+                                    <div class="skill-level">Avançado</div>
+                                    <div class="skill-description">Estruturação semântica e acessível</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-css3-alt"></i>
-                        <h3>CSS3</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%;"></div>
+                        
+                        <div class="skill-card" data-skill="css">
+                            <div class="skill-card-inner">
+                                <div class="skill-front">
+                                    <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                                    <div class="skill-name">CSS3</div>
+                                </div>
+                                <div class="skill-back">
+                                    <div class="skill-level">Avançado</div>
+                                    <div class="skill-description">Animações e layouts modernos</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-js-square"></i>
-                        <h3>JavaScript</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 60%;"></div>
+                        
+                        <div class="skill-card" data-skill="js">
+                            <div class="skill-card-inner">
+                                <div class="skill-front">
+                                    <div class="skill-icon"><i class="fa-brands fa-square-js"></i></div>
+                                    <div class="skill-name">JavaScript</div>
+                                </div>
+                                <div class="skill-back">
+                                    <div class="skill-level">Intermediário</div>
+                                    <div class="skill-description">ES6+ e manipulação do DOM</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-node-js"></i>
-                        <h3>Node.js</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 45%;"></div>
+                        
+                        <div class="skill-card" data-skill="react">
+                            <div class="skill-card-inner">
+                                <div class="skill-front">
+                                    <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+                                    <div class="skill-name">React</div>
+                                </div>
+                                <div class="skill-back">
+                                    <div class="skill-level">Em aprendizado</div>
+                                    <div class="skill-description">Hooks e componentes funcionais</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-react"></i>
-                        <h3>React</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 50%;"></div>
+                        
+                        <div class="skill-card" data-skill="node">
+                            <div class="skill-card-inner">
+                                <div class="skill-front">
+                                    <div class="skill-icon"><i class="fa-brands fa-node"></i></div>
+                                    <div class="skill-name">Node.js</div>
+                                </div>
+                                <div class="skill-back">
+                                    <div class="skill-level">Em aprendizado</div>
+                                    <div class="skill-description">APIs RESTful e Express</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-python"></i>
-                        <h3>Python</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 45%;"></div>
+                        
+                        <div class="skill-card" data-skill="python">
+                            <div class="skill-card-inner">
+                                <div class="skill-front">
+                                    <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+                                    <div class="skill-name">Python</div>
+                                </div>
+                                <div class="skill-back">
+                                    <div class="skill-level">Básico</div>
+                                    <div class="skill-description">Automação e scripts</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-database"></i>
-                        <h3>MySQL</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 40%;"></div>
+                        
+                        <div class="skill-card" data-skill="figma">
+                            <div class="skill-card-inner">
+                                <div class="skill-front">
+                                    <div class="skill-icon"><i class="fa-brands fa-figma"></i></div>
+                                    <div class="skill-name">Figma</div>
+                                </div>
+                                <div class="skill-back">
+                                    <div class="skill-level">Básico</div>
+                                    <div class="skill-description">Prototipagem</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-figma"></i>
-                        <h3>Figma</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 55%;"></div>
+                        
+                        <div class="skill-card" data-skill="git">
+                            <div class="skill-card-inner">
+                                <div class="skill-front">
+                                    <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+                                    <div class="skill-name">Git</div>
+                                </div>
+                                <div class="skill-back">
+                                    <div class="skill-level">Básico</div>
+                                    <div class="skill-description">Controle de versão e colaboração</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-            </section>
+                <div class="carousel-indicators" id="carouselIndicators"></div>
+            </div>
+        </section>
 
-            <!-- Contact Section -->
-            <section class="contact" id="contato">
-                <h2><i class="fas fa-envelope"></i> Contato</h2>
-                <p>Interessado em projetos colaborativos ou oportunidades de aprendizado? Vamos conversar!</p>
+        <!-- contato -->
+        <section class="contact" id="contact">
+            <div class="contact-content">
+                <h2 class="contact-title">Vamos trabalhar juntos</h2>
+                <p class="contact-description">
+                    Estou sempre aberto a novos desafios e oportunidades. 
+                    Entre em contato e vamos criar algo incrível juntos!
+                </p>
+                </div>
                 <div class="contact-buttons">
                     <a href="mailto:gabriellinssoares@gmail.com" class="btn primary">
                         <i class="fas fa-envelope"></i> Email
@@ -137,18 +234,9 @@
                         <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
                 </div>
-            </section>
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <!-- Script para abrir/fechar o menu no mobile -->
-    <script>
-    const toggle = document.querySelector(".menu-toggle");
-    const sidebar = document.querySelector(".sidebar");
-
-    toggle.addEventListener("click", () => {
-      sidebar.classList.toggle("active");
-    });
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
