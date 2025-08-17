@@ -7,7 +7,7 @@ O site apresenta minhas informações, habilidades, projetos e formas de contato
 
 ## 📸 Demonstração
 
-👉 [Acesse o portfólio online](https://elbizito.github.io/)  
+👉 [Acesse o portfólio online](https://elbizito.github.io/portfolio)  
 
 
 ---
