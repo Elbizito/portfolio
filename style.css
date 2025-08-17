@@ -851,13 +851,21 @@ body {
     transform: translateY(-2px);
 }
 
-a.i2{
+.btn2{
     display: flex;
-    justify-content: right;
     align-items: center;
-    color: white;
-    font-size: 30px;
-    
+    justify-content: center;
+    gap: 1rem;
+    background: var(--white);
+    color: var(--black);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.btn2:hover {
+    background: var(--light-gray);
+    transform: translateY(-2px);
 }
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -1107,3 +1115,4 @@ html {
         display: none;
     }
 }
+
